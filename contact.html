@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Celeste VVong</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <!-- Placeholder: Update this text for promos, free shipping, etc. -->
+        <p>FREE SHIPPING ON ALL ORDERS OVER $150</p>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="display: inline-flex; align-items: center; gap: 10px;">
+                    <img src="images/cw-logo-black.png" alt="CW Monogram Logo" style="height: 32px; width: auto;">
+                    <span>CELESTE VVONG</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="tops.html">Tops</a></li>
+                    <li><a href="lookbook.html">Lookbook</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#" class="icon search-toggle" aria-label="Search">Search</a>
+                <a href="#" class="icon cart-toggle" aria-label="Open cart">Cart (0)</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="contact-page">
+        <!-- Page Title -->
+        <section class="page-header">
+            <h1>CONTACT</h1>
+        </section>
+
+        <!-- Contact Section: Two Columns (form and info) -->
+        <section class="contact-container">
+            <!-- Left Column: Contact Form -->
+            <div class="contact-form-column">
+                <h2>Send us a message</h2>
+                <!-- Placeholder action URL -->
+                <form id="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="wholesale">Wholesale</option>
+                            <option value="collab">Collaboration</option>
+                            <option value="press">Press</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="How can we help you?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- Right Column: Contact Information -->
+            <div class="contact-info-column">
+                <h2>Get in touch</h2>
+                
+                <div class="info-block">
+                    <h3>Email</h3>
+                    <!-- Placeholder Email -->
+                    <p><a href="mailto:info@celestevvong.com">info@celestevvong.com</a></p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Social Media</h3>
+                    <ul class="social-links">
+                        <!-- Placeholder Social Links -->
+                        <li><a href="https://www.instagram.com/celestevvong/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    </ul>
+                </div>
+
+                <div class="info-block">
+                    <h3>Business Hours</h3>
+                    <!-- Placeholder Hours -->
+                    <p>Monday - Friday: 9am - 5pm PST<br>Saturday - Sunday: Closed</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Location</h3>
+                    <!-- Placeholder Location -->
+                    <p>123 Fashion Ave<br>Los Angeles, CA 90014<br>United States</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section with Collapsible Items -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-accordion">
+                <!-- FAQ Item 1: Shipping -->
+                <div class="faq-item">
+                    <button class="faq-question">Shipping Information <span class="icon-plus">+</span></button>
+                    <div class="faq-answer">
+                        <!-- Placeholder Answer -->
+                        <p>We ship worldwide. Domestic orders typically take 3-5 business days. International shipping can take 7-14 business days depending on the destination.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2: Returns -->
+                <div class="faq-item">
+                    <button class="faq-question">Returns & Exchanges <span class="icon-plus">+</span></button>
+                    <div class="faq-answer">
+                        <!-- Placeholder Answer -->
+                        <p>We accept returns within 14 days of delivery. Items must be unworn with original tags attached. Please contact us to initiate a return.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3: Sizing -->
+                <div class="faq-item">
+                    <button class="faq-question">Sizing Guide <span class="icon-plus">+</span></button>
+                    <div class="faq-answer">
+                        <!-- Placeholder Answer -->
+                        <p>Our garments generally fit true to size with a slightly oversized streetwear silhouette. Please refer to the specific measurements on each product page.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4: Wholesale -->
+                <div class="faq-item">
+                    <button class="faq-question">Wholesale Inquiries <span class="icon-plus">+</span></button>
+                    <div class="faq-answer">
+                        <!-- Placeholder Answer -->
+                        <p>For wholesale inquiries, please select "Wholesale" in the contact form subject dropdown and include details about your store, location, and other brands you carry.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Celeste VVong</h4>
+                <!-- Placeholder description -->
+                <p>Minimal streetwear for the modern world.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Newsletter</h4>
+                <!-- Placeholder Newsletter Form -->
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Celeste VVong. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

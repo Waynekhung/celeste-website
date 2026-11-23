@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celeste VVong | Official Store</title>
+    <!-- DM Sans Font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Link to external CSS file (DO NOT REMOVE) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-home bw-theme">
+
+    <!-- ReactBits Interactive Backgrounds -->
+    <canvas id="squares-canvas"></canvas>
+    <div class="db-grid-background"></div>
+
+    <!-- 
+      ANNOUNCEMENT BAR
+      EDIT: Change the text inside the span to update your current promotion or announcement.
+    -->
+    <div class="announcement-bar">
+        <span>Celeste Wong is the most beautiful girl in the world</span>
+        <button class="announcement-bar-close" aria-label="Close announcement">&times;</button>
+    </div>
+
+    <!-- 
+      HEADER / NAVIGATION
+      Sticky header containing the brand logo and main navigation links.
+    -->
+    <header class="site-header">
+        <div class="header-container">
+            <!-- Official Brand CW Logo -->
+            <a href="index.html" class="logo">
+                <img src="images/cw-logo-white.png" alt="CW Monogram Logo">
+                <span>CELESTE VVONG</span>
+            </a>
+
+            <!-- Mobile hamburger menu button (visible only on small screens) -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="lookbook.html">Lookbook</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Search Icon -->
+                <button class="search-toggle icon" aria-label="Search" style="background: none; border: none; color: #ffffff; cursor: pointer; display: flex; align-items: center; padding: 5px;">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                <!-- Cart Icon with reactive count badge -->
+                <button class="cart-toggle" aria-label="Open cart" style="position: relative;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-count-badge" style="display: none; position: absolute; top: -6px; right: -8px; background: #fff; color: #09090b; font-size: 10px; width: 18px; height: 18px; border-radius: 50%; align-items: center; justify-content: center; font-weight: bold;">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================
+             1. GHOSTBOY FULL-BLEED HERO CAMPAIGN BANNER
+             ========================================== -->
+        <section class="gb-hero-section">
+            <div class="gb-hero-card spotlight-card">
+                <div class="corner-crosshair corner-tl">+</div>
+                <div class="corner-crosshair corner-tr">+</div>
+                <div class="corner-crosshair corner-bl">+</div>
+                <div class="corner-crosshair corner-br">+</div>
+                <img class="gb-hero-bg-media" src="images/cw-jacket-front.jpg" alt="Celeste VVong Contour Tactile Jacket">
+                <div class="gb-hero-gradient-overlay"></div>
+                <div class="gb-hero-content">
+                    <span class="gb-hero-capsule shiny-text">CAPSULE 2026: CONTOUR</span>
+                    <h1 class="gb-hero-title">CONTOUR TACTILE JACKET</h1>
+                    <p class="gb-hero-desc">
+                        14oz structured Japanese denim engineered with dimensional hand-frayed contour piping, contrast bleached denim collar, and custom antique silver CW hardware.
+                    </p>
+                    <div class="gb-hero-actions">
+                        <button class="gb-hero-btn gb-hero-btn--white quickview-trigger" data-quickview-img="images/cw-jacket-front.jpg">
+                            <span>ACQUIRE PIECE — RM 480</span>
+                        </button>
+                        <a href="shop.html" class="gb-hero-btn">
+                            <span class="button__icon"><svg width="21" height="9" viewBox="0 0 21 9" fill="none"><path d="M20.354 4.854a.5.5 0 0 0 0-.708L17.172.964a.5.5 0 1 0-.707.708L19.293 4.5l-2.828 2.828a.5.5 0 1 0 .707.708l3.182-3.182ZM0 5h20V4H0v1Z" fill="#fff"/></svg></span>
+                            <span class="button__text">EXPLORE ARCHIVE</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             2. GHOSTBOY FEATURED COLLECTION (2:3 PORTRAIT CARDS)
+             ========================================== -->
+        <section class="gb-collection-section">
+            <div class="container">
+                <div class="gb-section-header">
+                    <div>
+                        <h2 class="gb-section-title">LATEST DROPS</h2>
+                        <span style="font-size: 0.78rem; color: #71717a; letter-spacing: 0.12em; text-transform: uppercase; font-family: ui-monospace, monospace;">AUTUMN / WINTER 2026 ARCHIVE</span>
+                    </div>
+                    <a href="shop.html" class="gb-view-all-link">
+                        <span>View all</span>
+                        <span>&rarr;</span>
+                    </a>
+                </div>
+
+                <div class="gb-product-grid">
+                    <!-- UNIFIED PIECE: CW CONTOUR TACTILE JACKET (3 VIEWS COMBINED) -->
+                    <div class="gb-product-card spotlight-card multi-angle-card" data-current-angle="0">
+                        <div class="corner-crosshair corner-tl">+</div>
+                        <div class="corner-crosshair corner-tr">+</div>
+                        <div class="corner-crosshair corner-bl">+</div>
+                        <div class="corner-crosshair corner-br">+</div>
+                        <div class="gb-product-media">
+                            <span class="gb-badge-overlay card-angle-badge">SIGNATURE // 01 FRONT</span>
+                            <span class="card-angle-counter">1 / 3</span>
+                            <a href="tops.html" class="card-main-link" aria-label="View CW Contour Tactile Jacket">
+                                <div class="card-images-slider">
+                                    <img class="angle-img is-active" src="images/cw-jacket-front.jpg" alt="CW Contour Tactile Jacket - Front View" data-angle-index="0" data-label="SIGNATURE // 01 FRONT">
+                                    <img class="angle-img" src="images/cw-jacket-detail.jpg" alt="CW Contour Tactile Jacket - Atelier Detail" data-angle-index="1" data-label="ATELIER // 02 DETAIL">
+                                    <img class="angle-img" src="images/cw-jacket-back.jpg" alt="CW Contour Tactile Jacket - Reverse Angle" data-angle-index="2" data-label="REVERSE // 03 BACK">
+                                </div>
+                            </a>
+                            
+                            <!-- Arrow Navigation -->
+                            <button type="button" class="card-arrow-btn card-arrow-prev" aria-label="Previous image angle">&#10094;</button>
+                            <button type="button" class="card-arrow-btn card-arrow-next" aria-label="Next image angle">&#10095;</button>
+
+                            <!-- Minimalist Angle Selector Pills -->
+                            <div class="card-angle-nav" aria-label="View angles">
+                                <button type="button" class="angle-pill is-active" data-angle-index="0">01 FRONT</button>
+                                <button type="button" class="angle-pill" data-angle-index="1">02 DETAIL</button>
+                                <button type="button" class="angle-pill" data-angle-index="2">03 BACK</button>
+                            </div>
+
+                            <button class="gb-quick-action quickview-trigger" data-quickview-img="images/cw-jacket-front.jpg">Quick View</button>
+                        </div>
+                        <div class="gb-product-details">
+                            <h3 class="gb-product-title"><a href="tops.html" style="color: inherit; text-decoration: none;">CW CONTOUR TACTILE JACKET</a></h3>
+                            <p class="gb-product-price">RM 348</p>
+                            <div class="gb-swatches">
+                                <span class="gb-swatch-dot is-active" style="background: #18181b;" title="Obsidian Black"></span>
+                                <span class="gb-swatch-dot" style="background: #e4e4e7;" title="Bleached Collar"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCT 4: WHIP CONTOUR TROUSERS -->
+                    <div class="gb-product-card spotlight-card">
+                        <div class="corner-crosshair corner-tl">+</div>
+                        <div class="corner-crosshair corner-tr">+</div>
+                        <div class="corner-crosshair corner-bl">+</div>
+                        <div class="corner-crosshair corner-br">+</div>
+                        <div class="gb-product-media product-image-placeholder">
+                            <img src="images/cw-logo-white.png" class="placeholder-monogram" alt="CW Monogram" style="width: 38px; height: auto;">
+                            <span class="placeholder-code">ARCHIVE // PT-04</span>
+                            <button class="gb-quick-action">Explore Specs</button>
+                        </div>
+                        <div class="gb-product-details">
+                            <h3 class="gb-product-title">WHIP CONTOUR TROUSERS - WINE</h3>
+                            <p class="gb-product-price">RM 259</p>
+                            <div class="gb-swatches">
+                                <span class="gb-swatch-dot is-active" style="background: #4c1d24;" title="Wine"></span>
+                                <span class="gb-swatch-dot" style="background: #18181b;" title="Black"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCT 5: MERANTI DRAPED MINI SKIRT -->
+                    <div class="gb-product-card spotlight-card">
+                        <div class="corner-crosshair corner-tl">+</div>
+                        <div class="corner-crosshair corner-tr">+</div>
+                        <div class="corner-crosshair corner-bl">+</div>
+                        <div class="corner-crosshair corner-br">+</div>
+                        <div class="gb-product-media product-image-placeholder">
+                            <img src="images/cw-logo-white.png" class="placeholder-monogram" alt="CW Monogram" style="width: 38px; height: auto;">
+                            <span class="placeholder-code">ARCHIVE // SK-05</span>
+                            <button class="gb-quick-action">Explore Specs</button>
+                        </div>
+                        <div class="gb-product-details">
+                            <h3 class="gb-product-title">MERANTI DRAPED MINI SKIRT</h3>
+                            <p class="gb-product-price">RM 189</p>
+                            <div class="gb-swatches">
+                                <span class="gb-swatch-dot is-active" style="background: #3b2720;" title="Mahogany"></span>
+                                <span class="gb-swatch-dot" style="background: #71717a;" title="Stone"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCT 6: TACTILE CARGO TROUSER -->
+                    <div class="gb-product-card spotlight-card">
+                        <div class="corner-crosshair corner-tl">+</div>
+                        <div class="corner-crosshair corner-tr">+</div>
+                        <div class="corner-crosshair corner-bl">+</div>
+                        <div class="corner-crosshair corner-br">+</div>
+                        <div class="gb-product-media product-image-placeholder">
+                            <img src="images/cw-logo-white.png" class="placeholder-monogram" alt="CW Monogram" style="width: 38px; height: auto;">
+                            <span class="placeholder-code">ARCHIVE // PT-06</span>
+                            <button class="gb-quick-action">Explore Specs</button>
+                        </div>
+                        <div class="gb-product-details">
+                            <h3 class="gb-product-title">TACTILE CARGO TROUSER - OBSIDIAN</h3>
+                            <p class="gb-product-price">RM 279</p>
+                            <div class="gb-swatches">
+                                <span class="gb-swatch-dot is-active" style="background: #18181b;" title="Obsidian"></span>
+                                <span class="gb-swatch-dot" style="background: #3f3f46;" title="Clay"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCT 7: CW MONOGRAM HARDWARE CHAIN -->
+                    <div class="gb-product-card spotlight-card">
+                        <div class="corner-crosshair corner-tl">+</div>
+                        <div class="corner-crosshair corner-tr">+</div>
+                        <div class="corner-crosshair corner-bl">+</div>
+                        <div class="corner-crosshair corner-br">+</div>
+                        <div class="gb-product-media product-image-placeholder">
+                            <img src="images/cw-logo-white.png" class="placeholder-monogram" alt="CW Monogram" style="width: 38px; height: auto;">
+                            <span class="placeholder-code">ARCHIVE // AC-07</span>
+                            <button class="gb-quick-action">Explore Specs</button>
+                        </div>
+                        <div class="gb-product-details">
+                            <h3 class="gb-product-title">CW MONOGRAM HARDWARE CHAIN</h3>
+                            <p class="gb-product-price">RM 149</p>
+                            <div class="gb-swatches">
+                                <span class="gb-swatch-dot is-active" style="background: #e4e4e7;" title="Silver"></span>
+                                <span class="gb-swatch-dot" style="background: #71717a;" title="Chrome"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCT 8: VELLUM SCULPTURAL SKIRT -->
+                    <div class="gb-product-card spotlight-card">
+                        <div class="corner-crosshair corner-tl">+</div>
+                        <div class="corner-crosshair corner-tr">+</div>
+                        <div class="corner-crosshair corner-bl">+</div>
+                        <div class="corner-crosshair corner-br">+</div>
+                        <div class="gb-product-media product-image-placeholder">
+                            <img src="images/cw-logo-white.png" class="placeholder-monogram" alt="CW Monogram" style="width: 38px; height: auto;">
+                            <span class="placeholder-code">ARCHIVE // SK-08</span>
+                            <button class="gb-quick-action">Explore Specs</button>
+                        </div>
+                        <div class="gb-product-details">
+                            <h3 class="gb-product-title">VELLUM SCULPTURAL SKIRT</h3>
+                            <p class="gb-product-price">RM 199</p>
+                            <div class="gb-swatches">
+                                <span class="gb-swatch-dot is-active" style="background: #18181b;" title="Black"></span>
+                                <span class="gb-swatch-dot" style="background: #a1a1aa;" title="Fog"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             3. GHOSTBOY ICONIC "AS SEEN ON" LOOKBOOK SCROLLER
+             ========================================== -->
+        <section class="as-seen-on-section">
+            <div class="container">
+                <div class="as-seen-on-header">
+                    <div>
+                        <h2 class="as-seen-on-title">AS SEEN ON</h2>
+                        <span style="font-size: 0.78rem; color: #71717a; letter-spacing: 0.12em; text-transform: uppercase; font-family: ui-monospace, monospace;">EDITORIAL ARCHIVE PERSPECTIVES</span>
+                    </div>
+                    <span class="as-seen-on-scroll-hint">DRAG TO EXPLORE &rarr;</span>
+                </div>
+
+                <div class="as-seen-on-track-wrapper" id="as-seen-on-scroller">
+                    <div class="as-seen-on-track">
+                        <!-- Card 1 -->
+                        <div class="as-seen-on-card quickview-trigger" data-quickview-img="images/cw-jacket-front.jpg">
+                            <img src="images/cw-jacket-front.jpg" alt="Contour Jacket Lookbook">
+                            <div class="as-seen-on-tag">
+                                <span>@celestevvong</span>
+                                <span>01 // FRONT</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="as-seen-on-card quickview-trigger" data-quickview-img="images/cw-jacket-detail.jpg">
+                            <img src="images/cw-jacket-detail.jpg" alt="Hardware Macro Lookbook">
+                            <div class="as-seen-on-tag">
+                                <span>@kualalumpur</span>
+                                <span>02 // HARDWARE</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="as-seen-on-card quickview-trigger" data-quickview-img="images/cw-jacket-back.jpg">
+                            <img src="images/cw-jacket-back.jpg" alt="Reverse Topography Lookbook">
+                            <div class="as-seen-on-tag">
+                                <span>@celestevvong</span>
+                                <span>03 // TOPOGRAPHY</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="as-seen-on-card quickview-trigger" data-quickview-img="images/cw-jacket-front.jpg">
+                            <img src="images/cw-jacket-front.jpg" alt="Street Fit Contour Jacket">
+                            <div class="as-seen-on-tag">
+                                <span>@streetstyle.my</span>
+                                <span>ATELIER EDIT</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="as-seen-on-card quickview-trigger" data-quickview-img="images/cw-jacket-detail.jpg">
+                            <img src="images/cw-jacket-detail.jpg" alt="Engraved Zip Pull Fit">
+                            <div class="as-seen-on-tag">
+                                <span>@archive.vault</span>
+                                <span>CW MONOGRAM</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="as-seen-on-card quickview-trigger" data-quickview-img="images/cw-jacket-back.jpg">
+                            <img src="images/cw-jacket-back.jpg" alt="Scapula Cord Fit">
+                            <div class="as-seen-on-tag">
+                                <span>@fashion.study</span>
+                                <span>FW26 ARCHIVE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             4. GHOSTBOY SIGNATURE BRAND MANIFESTO
+             ========================================== -->
+        <section class="brand-story">
+            <div class="container container-narrow">
+                <div class="brand-story-inner spotlight-card">
+                    <div class="corner-crosshair corner-tl">+</div>
+                    <div class="corner-crosshair corner-tr">+</div>
+                    <div class="corner-crosshair corner-bl">+</div>
+                    <div class="corner-crosshair corner-br">+</div>
+                    <span class="editorial-badge shiny-text" style="margin-bottom: 14px; display: inline-block;">ABOUT CELESTE VVONG</span>
+                    <h2 style="letter-spacing: -0.03em;">The Irregular as Regular</h2>
+                    <p>
+                        Established in 2026, CELESTE VVONG is a Kuala Lumpur-based design atelier that celebrates and reinvigorates their biggest source of inspiration — architectural youth culture. With values rooted in ethical production, tactile deconstruction, and a curiosity to subvert normativity, Celeste VVong’s creations pay homage to those who regard the irregular as their regular.
+                    </p>
+                    <a href="about.html" class="link-underline">Discover Full Story &rarr;</a>
+                    <div style="font-family: ui-monospace, monospace; font-size: 0.68rem; color: #71717a; letter-spacing: 0.16em; margin-top: 26px; text-transform: uppercase;">
+                        KUALA LUMPUR ATELIER // 3°08'N 101°41'E // EST. 2026
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             5. GHOSTBOY NEWSLETTER / CLUB INVITATION
+             ========================================== -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content spotlight-card">
+                    <div class="corner-crosshair corner-tl">+</div>
+                    <div class="corner-crosshair corner-tr">+</div>
+                    <div class="corner-crosshair corner-bl">+</div>
+                    <div class="corner-crosshair corner-br">+</div>
+                    <span class="editorial-badge shiny-text" style="margin-bottom: 14px; display: inline-block;">JOIN THE CLUB</span>
+                    <h2 style="letter-spacing: -0.03em;">Be the First to Know</h2>
+                    <p>Subscribe to receive updates, access to exclusive drops, and private atelier chronicles.</p>
+                    <form action="#" method="POST" class="newsletter-form">
+                        <input type="email" name="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary" style="border-radius: 8px;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 
+      FOOTER SECTION
+    -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                        <img src="images/cw-logo-white.png" alt="CW Monogram Logo" style="height: 32px; width: auto; object-fit: contain;">
+                        <h3 style="margin: 0; font-size: 1.15rem; letter-spacing: 0.08em;">CELESTE VVONG</h3>
+                    </div>
+                    <p>Crafted for the unconventional. Monochromatic atelier silhouettes.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html">All Products</a></li>
+                        <li><a href="shop.html">Outerwear</a></li>
+                        <li><a href="#">Bottoms</a></li>
+                        <li><a href="#">Dresses & Skirts</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <!-- EDIT: Replace # with your actual social media URLs -->
+                        <li><a href="https://www.instagram.com/celestevvong/" target="_blank">Instagram</a></li>
+                        <li><a href="#" target="_blank">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Celeste VVong. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         PRODUCT QUICK VIEW MODAL
+         ========================================== -->
+    <div class="quickview-modal-backdrop" aria-hidden="true">
+        <div class="quickview-modal-dialog">
+            <button class="quickview-close-btn" aria-label="Close modal">&times;</button>
+            <div class="quickview-gallery">
+                <div class="quickview-main-image">
+                    <img id="qv-main-img" src="images/cw-jacket-front.jpg" alt="Quick view jacket image">
+                </div>
+                <div class="quickview-thumbs">
+                    <div class="quickview-thumb is-active" data-src="images/cw-jacket-front.jpg">
+                        <img src="images/cw-jacket-front.jpg" alt="Front view">
+                    </div>
+                    <div class="quickview-thumb" data-src="images/cw-jacket-detail.jpg">
+                        <img src="images/cw-jacket-detail.jpg" alt="Detail view">
+                    </div>
+                    <div class="quickview-thumb" data-src="images/cw-jacket-back.jpg">
+                        <img src="images/cw-jacket-back.jpg" alt="Back view">
+                    </div>
+                </div>
+            </div>
+            <div class="quickview-details">
+                <span class="quickview-edition">AUTUMN / WINTER 2026 ARCHIVE</span>
+                <h2 class="quickview-title">CW CONTOUR TACTILE JACKET</h2>
+                <div class="quickview-price">RM 348</div>
+                <p class="quickview-desc">
+                    Boxy cropped workwear silhouette engineered from 14oz structured cotton canvas. Features custom tactile 3D contour piping, acid-distressed contrast collar & hem facing, and bespoke antiqued silver CW hardware.
+                </p>
+                <div class="quickview-options">
+                    <div class="quickview-options-title">Select Size:</div>
+                    <div class="size-pill-group">
+                        <button class="size-pill" type="button">S</button>
+                        <button class="size-pill is-selected" type="button">M</button>
+                        <button class="size-pill" type="button">L</button>
+                        <button class="size-pill" type="button">XL</button>
+                    </div>
+                </div>
+                <button class="quickview-cta-btn" type="button">Add to Bag — RM 348</button>
+                <a href="tops.html" class="quickview-extra-link">View Full Piece &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JS file (DO NOT REMOVE) -->
+    <script src="js/main.js?v=2.1"></script>
+</body>
+</html>

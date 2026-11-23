@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        =========================================================
+        CELESTE VVONG - LOOKBOOK / GALLERY PAGE
+        =========================================================
+        Description: Clean, minimal lookbook for showcasing
+        collections and editorial shoots.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookbook - Celeste VVong</title>
+    
+    <!-- Main Stylesheet (all lookbook-specific styles now live in css/style.css) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-lookbook">
+
+    <!-- ==========================================
+         ANNOUNCEMENT BAR
+         ========================================== -->
+    <div class="announcement-bar">
+        <span>FREE WORLDWIDE SHIPPING ON ORDERS OVER $200</span>
+        <button class="announcement-bar-close" aria-label="Close announcement">&times;</button>
+    </div>
+
+    <!-- ==========================================
+         HEADER & NAVIGATION
+         ========================================== -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/cw-logo-black.png" alt="CW Monogram Logo">
+                <span>CELESTE VVONG</span>
+            </a>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="tops.html">Tops</a></li>
+                    <li><a href="lookbook.html" class="active">Lookbook</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="icon search-toggle" aria-label="Search">Search</a>
+                <a href="#" class="icon cart-toggle" aria-label="Open cart">Cart (0)</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         MAIN CONTENT - LOOKBOOK
+         ========================================== -->
+    <main class="lookbook-container">
+        
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Lookbook</h1>
+            <p>Archive & Editorials</p>
+        </div>
+
+        <!-- 
+            COLLECTION: FALL/WINTER 2026
+            Divider marking the start of a new section
+        -->
+        <div class="collection-divider">
+            <span>Fall/Winter 2026</span>
+        </div>
+
+        <!-- 
+            GALLERY GRID
+            To add a real image, replace the <div class="gallery-placeholder">
+            with an <img> tag, e.g. <img src="images/look1.jpg" alt="FW26 Look 1">
+            and give the parent <a> a normal src-bearing <img>, or keep
+            data-image-url pointing at the full-size image for the lightbox.
+        -->
+        <div class="lookbook-grid">
+            
+            <!-- Item 1: Front Architecture -->
+            <a class="gallery-item lightbox-trigger" data-image-url="images/cw-jacket-front.jpg">
+                <img src="images/cw-jacket-front.jpg" alt="FW26 Look 01 - Silhouette Architecture">
+                <span class="gallery-tag-badge">FW26 LOOK 01 // SILHOUETTE ARCHITECTURE</span>
+            </a>
+
+            <!-- Item 2: Landscape Collar & Hardware Detail (Spans 2 columns) -->
+            <a class="gallery-item landscape span-2 lightbox-trigger" data-image-url="images/cw-jacket-detail.jpg">
+                <img src="images/cw-jacket-detail.jpg" alt="FW26 Look 02 - Atelier Collar & Hardware">
+                <span class="gallery-tag-badge">FW26 LOOK 02 // BLEACH CRAFT & HARDWARE</span>
+            </a>
+
+            <!-- Item 3: Reverse Topography -->
+            <a class="gallery-item lightbox-trigger" data-image-url="images/cw-jacket-back.jpg">
+                <img src="images/cw-jacket-back.jpg" alt="FW26 Look 03 - Reverse Kinetic Topography">
+                <span class="gallery-tag-badge">FW26 LOOK 03 // REVERSE TOPOGRAPHY</span>
+            </a>
+
+            <!-- Item 4: Square -->
+            <a class="gallery-item square lightbox-trigger" data-image-url="images/cw-jacket-detail.jpg">
+                <img src="images/cw-jacket-detail.jpg" alt="FW26 Look 04 - Macro Monogram Zip">
+                <span class="gallery-tag-badge">FW26 LOOK 04 // MONOGRAM HARDWARE</span>
+            </a>
+
+            <!-- Item 5: Portrait -->
+            <a class="gallery-item lightbox-trigger" data-image-url="images/cw-jacket-front.jpg">
+                <img src="images/cw-jacket-front.jpg" alt="FW26 Look 05 - Boxy Cut Fit">
+                <span class="gallery-tag-badge">FW26 LOOK 05 // JAPANESE CANVAS</span>
+            </a>
+            
+        </div> <!-- End FW26 Grid -->
+
+
+        <!-- 
+            COLLECTION: SPRING/SUMMER 2026
+            Another section divider
+        -->
+        <div class="collection-divider">
+            <span>Spring/Summer 2026</span>
+        </div>
+
+        <div class="lookbook-grid">
+
+            <!-- Item 6: Landscape, spans 2 columns -->
+            <a class="gallery-item landscape span-2 lightbox-trigger" data-image-url="images/cw-jacket-back.jpg">
+                <img src="images/cw-jacket-back.jpg" alt="SS26 Look 01 - Kinetic Topography">
+                <span class="gallery-tag-badge">SS26 LOOK 01 // KINETIC TOPOGRAPHY</span>
+            </a>
+
+            <!-- Item 7: Portrait -->
+            <a class="gallery-item lightbox-trigger" data-image-url="images/cw-jacket-detail.jpg">
+                <img src="images/cw-jacket-detail.jpg" alt="SS26 Look 02 - Bleach Accent">
+                <span class="gallery-tag-badge">SS26 LOOK 02 // ACID DISTRESSED COLLAR</span>
+            </a>
+
+            <!-- Item 8: Portrait -->
+            <a class="gallery-item lightbox-trigger" data-image-url="images/cw-jacket-front.jpg">
+                <img src="images/cw-jacket-front.jpg" alt="SS26 Look 03 - Workwear Silhouette">
+                <span class="gallery-tag-badge">SS26 LOOK 03 // CROPPED WORKWEAR</span>
+            </a>
+
+            <!-- Item 9: Square -->
+            <a class="gallery-item square lightbox-trigger" data-image-url="images/cw-jacket-back.jpg">
+                <img src="images/cw-jacket-back.jpg" alt="SS26 Look 04 - Scapula Distressed Cord">
+                <span class="gallery-tag-badge">SS26 LOOK 04 // SCAPULA DETAILING</span>
+            </a>
+
+            <!-- Item 10: Portrait -->
+            <a class="gallery-item lightbox-trigger" data-image-url="images/cw-jacket-detail.jpg">
+                <img src="images/cw-jacket-detail.jpg" alt="SS26 Look 05 - Atelier Finish">
+                <span class="gallery-tag-badge">SS26 LOOK 05 // ATELIER CRAFT FINISH</span>
+            </a>
+
+        </div> <!-- End SS26 Grid -->
+
+    </main>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Celeste VVong</h4>
+                    <p>Minimal streetwear for the modern world.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="lookbook.html">Lookbook</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form" action="#" method="POST">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Celeste VVong. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         SCRIPTS
+         The lightbox in main.js handles clicks on '.lightbox-trigger'
+         and reads 'data-image-url' to open the full-size image.
+         ========================================== -->
+    <script src="js/main.js"></script>
+</body>
+</html>

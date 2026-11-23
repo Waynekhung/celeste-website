@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop All - Celeste VVong</title>
+    
+    <!-- Main Stylesheet (all shop-specific styles now live in css/style.css) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-shop">
+
+    <!-- ==========================================
+         ANNOUNCEMENT BAR
+         ========================================== -->
+    <div class="announcement-bar">
+        <span>FREE SHIPPING ON ALL ORDERS OVER 300 MYR</span>
+        <button class="announcement-bar-close" aria-label="Close announcement">&times;</button>
+    </div>
+
+    <!-- ==========================================
+         HEADER & NAVIGATION
+         ========================================== -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/cw-logo-black.png" alt="CW Monogram Logo">
+                <span>CELESTE VVONG</span>
+            </a>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="tops.html">Tops</a></li>
+                    <li><a href="lookbook.html">Lookbook</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="icon search-toggle" aria-label="Search">Search</a>
+                <a href="#" class="icon cart-toggle" aria-label="Open cart">Cart (0)</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         MAIN SHOP CONTENT
+         ========================================== -->
+    <main class="shop-section">
+        
+        <div class="shop-header">
+            <h1 class="shop-title">SHOP ALL</h1>
+
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <a href="#all" class="filter-link active" data-category="all">All</a>
+                <a href="#tops" class="filter-link" data-category="tops">Tops</a>
+                <a href="#bottoms" class="filter-link" data-category="bottoms">Bottoms</a>
+                <a href="#dresses" class="filter-link" data-category="dresses">Dresses</a>
+                <a href="#accessories" class="filter-link" data-category="accessories">Accessories</a>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+            
+            <!-- UNIFIED PIECE: CW CONTOUR TACTILE JACKET (3 VIEWS COMBINED) -->
+            <div class="product-card multi-angle-card" data-category="tops" data-product-id="cw-contour-jacket" data-current-angle="0">
+                <div class="product-image-wrapper">
+                    <span class="product-badge-overlay card-angle-badge">SIGNATURE PIECE // 01 FRONT</span>
+                    <span class="card-angle-counter">1 / 3</span>
+                    <a href="tops.html" class="card-main-link" aria-label="View CW Contour Tactile Jacket">
+                        <div class="card-images-slider">
+                            <img class="angle-img is-active" src="images/cw-jacket-front.jpg" alt="CW Contour Tactile Jacket - Front View" data-angle-index="0" data-label="SIGNATURE PIECE // 01 FRONT">
+                            <img class="angle-img" src="images/cw-jacket-detail.jpg" alt="CW Contour Tactile Jacket - Atelier Detail" data-angle-index="1" data-label="ATELIER DETAIL // 02 DETAIL">
+                            <img class="angle-img" src="images/cw-jacket-back.jpg" alt="CW Contour Tactile Jacket - Reverse Angle" data-angle-index="2" data-label="REVERSE ANGLE // 03 BACK">
+                        </div>
+                    </a>
+                    
+                    <!-- Arrow Navigation -->
+                    <button type="button" class="card-arrow-btn card-arrow-prev" aria-label="Previous image angle">&#10094;</button>
+                    <button type="button" class="card-arrow-btn card-arrow-next" aria-label="Next image angle">&#10095;</button>
+
+                    <!-- Minimalist Angle Selector Pills -->
+                    <div class="card-angle-nav" aria-label="View angles">
+                        <button type="button" class="angle-pill is-active" data-angle-index="0">01 FRONT</button>
+                        <button type="button" class="angle-pill" data-angle-index="1">02 DETAIL</button>
+                        <button type="button" class="angle-pill" data-angle-index="2">03 BACK</button>
+                    </div>
+
+                    <button class="product-quickview-btn quickview-trigger" data-quickview-img="images/cw-jacket-front.jpg">Quick View</button>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h2 class="product-name"><a href="tops.html">CW CONTOUR TACTILE JACKET</a></h2>
+                        <span class="product-view-caption">3 Angles &bull; Signature Architecture</span>
+                    </div>
+                    <p class="product-price">348 MYR</p>
+                </div>
+            </div>
+
+            <!-- PRODUCT 2: Nylon Track Jacket -->
+            <div class="product-card" data-category="tops" data-product-id="nylon-track-jacket">
+                <div class="product-image-wrapper">
+                    <div class="placeholder-inner">
+                        <img src="images/cw-logo-white.png" alt="CW Monogram">
+                        <span>OUTERWEAR // TR-01</span>
+                        <button type="button" class="product-quickview-btn quickview-trigger" data-quickview-img="images/cw-jacket-front.jpg">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Nylon Track Jacket</h2>
+                    <p class="product-price">410 MYR</p>
+                </div>
+            </div>
+
+            <!-- PRODUCT 3: Signature Zip-Up Hoodie -->
+            <div class="product-card" data-category="tops" data-product-id="sig-zip-hoodie">
+                <div class="product-image-wrapper">
+                    <div class="placeholder-inner">
+                        <img src="images/cw-logo-white.png" alt="CW Monogram">
+                        <span>FLEECE // HD-02</span>
+                        <button type="button" class="product-quickview-btn quickview-trigger" data-quickview-img="images/cw-jacket-detail.jpg">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Signature Zip-Up Hoodie</h2>
+                    <p class="product-price">290 MYR</p>
+                </div>
+            </div>
+
+            <!-- PRODUCT 4: Pleated Midi Dress -->
+            <div class="product-card" data-category="dresses" data-product-id="pleated-midi-dress">
+                <div class="product-image-wrapper">
+                    <div class="placeholder-inner">
+                        <img src="images/cw-logo-white.png" alt="CW Monogram">
+                        <span>ATELIER // DR-03</span>
+                        <button type="button" class="product-quickview-btn quickview-trigger" data-quickview-img="images/cw-jacket-back.jpg">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Pleated Midi Dress</h2>
+                    <p class="product-price">350 MYR</p>
+                </div>
+            </div>
+
+            <!-- PRODUCT 5: Boxy Crop Shirt -->
+            <div class="product-card" data-category="tops" data-product-id="boxy-crop-shirt">
+                <div class="product-image-wrapper">
+                    <div class="placeholder-inner">
+                        <img src="images/cw-logo-white.png" alt="CW Monogram">
+                        <span>SHIRTING // SH-04</span>
+                        <button type="button" class="product-quickview-btn quickview-trigger" data-quickview-img="images/cw-jacket-front.jpg">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Boxy Crop Shirt</h2>
+                    <p class="product-price">160 MYR</p>
+                </div>
+            </div>
+
+            <!-- PRODUCT 6: Parachute Trousers -->
+            <div class="product-card" data-category="bottoms" data-product-id="parachute-trousers">
+                <div class="product-image-wrapper">
+                    <div class="placeholder-inner">
+                        <img src="images/cw-logo-white.png" alt="CW Monogram">
+                        <span>BOTTOMS // PA-05</span>
+                        <button type="button" class="product-quickview-btn quickview-trigger" data-quickview-img="images/cw-jacket-back.jpg">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Parachute Trousers</h2>
+                    <p class="product-price">280 MYR</p>
+                </div>
+            </div>
+
+            <!-- PRODUCT 7: Ribbed Tank Top -->
+            <div class="product-card" data-category="tops" data-product-id="ribbed-tank-top">
+                <div class="product-image-wrapper">
+                    <div class="placeholder-inner">
+                        <img src="images/cw-logo-white.png" alt="CW Monogram">
+                        <span>BASICS // TK-06</span>
+                        <button type="button" class="product-quickview-btn quickview-trigger" data-quickview-img="images/cw-jacket-detail.jpg">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Ribbed Tank Top</h2>
+                    <p class="product-price">90 MYR</p>
+                </div>
+            </div>
+
+            <!-- PRODUCT 8: Asymmetric Midi Skirt -->
+            <div class="product-card" data-category="bottoms" data-product-id="asymmetric-skirt">
+                <div class="product-image-wrapper">
+                    <div class="placeholder-inner">
+                        <img src="images/cw-logo-white.png" alt="CW Monogram">
+                        <span>BOTTOMS // SK-07</span>
+                        <button type="button" class="product-quickview-btn quickview-trigger" data-quickview-img="images/cw-jacket-back.jpg">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Asymmetric Midi Skirt</h2>
+                    <p class="product-price">220 MYR</p>
+                </div>
+            </div>
+
+            <!-- PRODUCT 9: Chunky Chain Necklace -->
+            <div class="product-card" data-category="accessories" data-product-id="chunky-chain">
+                <div class="product-image-wrapper">
+                    <div class="placeholder-inner">
+                        <img src="images/cw-logo-white.png" alt="CW Monogram">
+                        <span>JEWELRY // NK-08</span>
+                        <button type="button" class="product-quickview-btn quickview-trigger" data-quickview-img="images/cw-jacket-detail.jpg">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Chunky Chain Necklace</h2>
+                    <p class="product-price">120 MYR</p>
+                </div>
+            </div>
+
+            <!-- PRODUCT 10: Monogram Beanie -->
+            <div class="product-card" data-category="accessories" data-product-id="monogram-beanie">
+                <div class="product-image-wrapper">
+                    <div class="placeholder-inner">
+                        <img src="images/cw-logo-white.png" alt="CW Monogram">
+                        <span>HEADWEAR // BN-09</span>
+                        <button type="button" class="product-quickview-btn quickview-trigger" data-quickview-img="images/cw-jacket-front.jpg">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Monogram Beanie</h2>
+                    <p class="product-price">85 MYR</p>
+                </div>
+            </div>
+            
+            <!-- PRODUCT 11: Heavyweight Canvas Tote -->
+            <div class="product-card" data-category="accessories" data-product-id="canvas-tote">
+                <div class="product-image-wrapper">
+                    <div class="placeholder-inner">
+                        <img src="images/cw-logo-white.png" alt="CW Monogram">
+                        <span>LUGGAGE // TT-10</span>
+                        <button type="button" class="product-quickview-btn quickview-trigger" data-quickview-img="images/cw-jacket-detail.jpg">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Heavyweight Canvas Tote</h2>
+                    <p class="product-price">150 MYR</p>
+                </div>
+            </div>
+
+            <!-- PRODUCT 12: Tech-Fleece Vest -->
+            <div class="product-card" data-category="tops" data-product-id="tech-fleece-vest">
+                <div class="product-image-wrapper">
+                    <div class="placeholder-inner">
+                        <img src="images/cw-logo-white.png" alt="CW Monogram">
+                        <span>LAYER // VT-11</span>
+                        <button type="button" class="product-quickview-btn quickview-trigger" data-quickview-img="images/cw-jacket-front.jpg">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Tech-Fleece Vest</h2>
+                    <p class="product-price">260 MYR</p>
+                </div>
+            </div>
+
+            <!-- PRODUCT 13: Wide Leg Denim -->
+            <div class="product-card" data-category="bottoms" data-product-id="wide-leg-denim">
+                <div class="product-image-wrapper">
+                    <div class="placeholder-inner">
+                        <img src="images/cw-logo-white.png" alt="CW Monogram">
+                        <span>DENIM // DN-12</span>
+                        <button type="button" class="product-quickview-btn quickview-trigger" data-quickview-img="images/cw-jacket-back.jpg">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Wide Leg Denim</h2>
+                    <p class="product-price">310 MYR</p>
+                </div>
+            </div>
+
+            <!-- PRODUCT 14: Padded Nylon Crossbody -->
+            <div class="product-card" data-category="accessories" data-product-id="padded-crossbody">
+                <div class="product-image-wrapper">
+                    <div class="placeholder-inner">
+                        <img src="images/cw-logo-white.png" alt="CW Monogram">
+                        <span>BAGS // CB-13</span>
+                        <button type="button" class="product-quickview-btn quickview-trigger" data-quickview-img="images/cw-jacket-detail.jpg">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Padded Nylon Crossbody</h2>
+                    <p class="product-price">190 MYR</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Celeste VVong</h4>
+                    <p>Minimal streetwear for the modern world.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="lookbook.html">Lookbook</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form" action="#" method="POST">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Celeste VVong. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- ==========================================
+         PRODUCT QUICK VIEW MODAL
+         ========================================== -->
+    <div class="quickview-modal-backdrop" aria-hidden="true">
+        <div class="quickview-modal-dialog">
+            <button class="quickview-close-btn" aria-label="Close modal">&times;</button>
+            <div class="quickview-gallery">
+                <div class="quickview-main-image">
+                    <img id="qv-main-img" src="images/cw-jacket-front.jpg" alt="Quick view jacket image">
+                </div>
+                <div class="quickview-thumbs">
+                    <div class="quickview-thumb is-active" data-src="images/cw-jacket-front.jpg">
+                        <img src="images/cw-jacket-front.jpg" alt="Front view">
+                    </div>
+                    <div class="quickview-thumb" data-src="images/cw-jacket-detail.jpg">
+                        <img src="images/cw-jacket-detail.jpg" alt="Detail view">
+                    </div>
+                    <div class="quickview-thumb" data-src="images/cw-jacket-back.jpg">
+                        <img src="images/cw-jacket-back.jpg" alt="Back view">
+                    </div>
+                </div>
+            </div>
+            <div class="quickview-details">
+                <span class="quickview-edition">AUTUMN / WINTER 2026 ARCHIVE</span>
+                <h2 class="quickview-title">CW CONTOUR TACTILE JACKET</h2>
+                <div class="quickview-price">348 MYR</div>
+                <p class="quickview-desc">
+                    Boxy cropped workwear silhouette engineered from 14oz structured cotton canvas. Features custom tactile 3D contour piping, acid-distressed contrast collar & hem facing, and bespoke antiqued silver CW hardware.
+                </p>
+                <div class="quickview-options">
+                    <div class="quickview-options-title">Select Size:</div>
+                    <div class="size-pill-group">
+                        <button class="size-pill" type="button">S</button>
+                        <button class="size-pill is-selected" type="button">M</button>
+                        <button class="size-pill" type="button">L</button>
+                        <button class="size-pill" type="button">XL</button>
+                    </div>
+                </div>
+                <button class="quickview-cta-btn" type="button">Add to Bag — 348 MYR</button>
+                <a href="tops.html" class="quickview-extra-link">View Full Piece &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="js/main.js?v=2.1"></script>
+</body>
+</html>
